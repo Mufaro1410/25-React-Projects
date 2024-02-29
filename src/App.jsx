@@ -1,6 +1,7 @@
 import "./App.css";
 import Accordion from "./components/accordion";
 import ImageSlider from "./components/image-slider";
+import LightDarkMode from "./components/light-dark-mode";
 import LoadMoreData from "./components/load-more-data";
 import QRCodeGenerator from "./components/qr-code-generator";
 import RandomColour from "./components/random-colour";
@@ -16,7 +17,7 @@ function App() {
 
       {/* Random Colour Component */}
       {/* <RandomColour /> */}
-
+ 
       {/* Star Rating Component*/}
       {/* <StarRating noOfStars={10}/> */}
 
@@ -30,7 +31,10 @@ function App() {
       {/* <TreeView menus={menus}/> */}
 
       {/* QR Code Generator */}
-      <QRCodeGenerator />
+      {/* <QRCodeGenerator /> */}
+
+      {/* Light Dark Mode */}
+      <LightDarkMode />
     </div>
   );
 }
