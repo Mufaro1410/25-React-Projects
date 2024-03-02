@@ -53,6 +53,8 @@ export default function ScrollIndicator({ url }) {
     return <div>Loading data ! Please wait</div>;
   }
 
+  console.log(data);
+
   return (
     <div>
       <div className="top-container">
