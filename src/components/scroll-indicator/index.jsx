@@ -14,7 +14,7 @@ export default function ScrollIndicator({ url }) {
       const data = await response.json();
 
       if (data && data.products && data.products.length > 0) {
-        setData(data);
+        setData(data.products);
         setLoading(false);
       }
     } catch (error) {
@@ -53,7 +53,7 @@ export default function ScrollIndicator({ url }) {
     return <div>Loading data ! Please wait</div>;
   }
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div>

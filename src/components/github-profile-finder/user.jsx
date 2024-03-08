@@ -19,7 +19,7 @@ export default function User({ user }) {
       <div>
         <img src={avatar_url} className="avatar" alt="User" />
       </div>
-      <div>
+      <div className="name-container">
         <a href={`https://github.com/${login}`}>{name || login}</a>
         <p>
           User joined on{" "}
@@ -28,7 +28,7 @@ export default function User({ user }) {
           })} ${createdDate.getFullYear()}`}
         </p>
       </div>
-      <div>
+      <div className="profile-info">
         <div>
           <p>Public Repos</p>
           <p>{public_repos}</p>
